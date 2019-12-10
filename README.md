@@ -14,7 +14,7 @@
   sudo pacman -S gvim
   ```
 
-* Pour les gens sous windows, passez par le site de [vim](vim.org).
+* Pour les gens sous windows, passez par le site de [vim](https://www.vim.org).
 
 * `vim` par  défaut ne peut  pas gérer de serveur,  c’est pour cette  raison que
   l’on doit install `Graphical Vim` ( = `gvim` ou `vim-gtk3`).
