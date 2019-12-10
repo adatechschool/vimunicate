@@ -2,7 +2,7 @@
 
 * L’outil pour communiquer avec `vim`.
 
-# Installation de vim en client - serveur
+# Installation de vim en mode client - serveur
 
 * Pour les gens sous Ubuntu :
   ```bash
