@@ -2,6 +2,12 @@
 
 * L’outil pour communiquer avec `vim`.
 
+* Interagir avec des pages wikipedia, les écrire dans un fichier.
+
+* Communiquer avec une  autre personne comme dans un semblant  de `framapad` sur
+  `vim` (en utilisant `vim scp` qui permet de copier des données d’un ordinateur
+  à l’autre).
+
 # Installation de vim en mode client - serveur
 
 * Pour les gens sous Ubuntu :
