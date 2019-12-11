@@ -1,1 +1,3 @@
-echo "coucou"
+while 1
+  echo "coucou"
+endwhile
