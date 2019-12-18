@@ -1,12 +1,16 @@
 # Vimunicate
 
-* L’outil pour communiquer avec `vim`.
+## Description
+
+* _L’outil pour communiquer avec `vim`._
 
 * Interagir avec des pages wikipedia, les écrire dans un fichier.
 
-* Communiquer avec une  autre personne comme dans un semblant  de `framapad` sur `vim` (en utilisant `vim scp` qui permet de copier des données d’un ordinateur à l’autre).
+* Communiquer avec d’autres personnes comme `framapad` mais sur `vim` (`framavim`).
 
-# Installation de vim en mode client - serveur
+## Configuration
+
+### Vim en mode client - serveur
 
 * Pour les gens sous Ubuntu :
   ```bash
@@ -20,15 +24,35 @@
 
 * Pour les gens sous windows, passez par le site de [vim](https://www.vim.org).
 
-* `vim` par  défaut ne peut  pas gérer de serveur,  c’est pour cette  raison que l’on doit install `Graphical Vim` ( = `gvim` ou `vim-gtk3`).
+* `vim` par  défaut ne peut  pas gérer de serveur,  c’est pour cette  raison que l’on installe `Graphical Vim` ( = `gvim` ou `vim-gtk3`).
 
 * Pour vérifier si `vim` du système supporte la gestion client-serveur :
   ```bash
-  [[ $(vim --version | grep +clientserver) ]] && echo Tout est correct || echo Tu dois installer gvim ou vim-gtk3
+  [[ $(vim --version | grep +clientserver) ]] && echo OK || echo please install gvim or vim-gtk3
   ```
 
-# Utilisation des fonctions
+### Vim avec OpenSSH et gestion des mots de passe 
+
+* Pour les gens sous Ubuntu :
+  ```bash
+  sudo apt install openssh-client openssh-server
+  sudo systemctl restart sshd.service
+  ```
+
+* Pour les gens sous Arch, l’installation n’est pas nécessaire :
+  ```bash
+  systemctl enable --now sshd
+  ```
+
+* Récupérer un fichier distant avec `vim` et `ssh` :
+  ```bash
+  vim scp <nom_d’utilisatrice>@<adresse_ip_de_la_machine>
+  ```
+
+* Pour ne plus avoir à taper son mot de passe à chaque modification, vous pouvez lire la documentation dans l’aide de `vim` pour `netrw-ssh-hack`.  
+
+## `wikipevim`
 
 * Pour utiliser le « bot » `wikipevim`, tapez la commande `:source wikipevim.vim`.
 
-* Pour lire une page wikipedia, tapez la commande `:call Wiki('votre recherche entre guillemet')`.
+* Pour lire une page wikipedia, tapez la commande `:Wiki 'votre recherche entre guillemet'`.
