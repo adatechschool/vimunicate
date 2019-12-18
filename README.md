@@ -44,6 +44,8 @@
   systemctl enable --now sshd
   ```
 
+* Pour les gens sous Windows, se référer à la [doc](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration) de Microsoft.
+
 * Récupérer un fichier distant avec `vim` et `ssh` :
   ```bash
   vim scp <nom_d’utilisatrice>@<adresse_ip_de_la_machine>
