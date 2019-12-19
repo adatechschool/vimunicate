@@ -24,9 +24,9 @@
 
 * Pour les gens sous windows, passez par le site de [vim](https://www.vim.org).
 
-* `vim` par  défaut ne peut  pas gérer de serveur,  c’est pour cette  raison que l’on installe `Graphical Vim` ( = `gvim` ou `vim-gtk3`).
+* `vim` par  défaut n’est pas compilé avec l’option `+clientserver`,  c’est pour cette  raison que l’on installe `Graphical Vim` ( = `gvim` ou `vim-gtk3`).
 
-* Pour vérifier si `vim` du système supporte la gestion client-serveur :
+* Pour vérifier si votre `vim` supporte la gestion client-serveur :
   ```bash
   [[ $(vim --version | grep +clientserver) ]] && echo OK || echo please install gvim or vim-gtk3
   ```
